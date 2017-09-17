@@ -1,0 +1,34 @@
+{
+  "authors": [
+    {
+      "name": "Vaibhav Pandey",
+      "email": "contact@vaibhavpandey.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Katora\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Katora\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "description": "Simple service container implementing PSR-11 for PHP >= 5.3.",
+  "homepage": "http://vaibhavpandeyvpz.github.io/katora",
+  "keywords": ["psr-11", "service", "container"],
+  "license": "MIT",
+  "name": "vaibhavpandeyvpz/katora",
+  "require": {
+    "php": "^5.3||^7.0",
+    "psr/container": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.0||^5.0"
+  },
+  "type": "library"
+}

@@ -10,6 +10,7 @@
 
 namespace Katora;
 
+use Katora\Mock\ContainerKeeper;
 use Katora\Mock\ThirteenServiceProvider;
 
 /**
@@ -120,6 +121,15 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
         $container = new Container();
         $this->setExpectedException('Psr\Container\ContainerExceptionInterface');
         $container->set(13, 'thirteen');
+    }
+
+    public function testExtras()
+    {
+        $keeper = new ContainerKeeper();
+        $this->assertNull($keeper->getContainer());
+        $keeper->setContainer($container = new Container());
+        $this->assertNotNull($keeper->getContainer());
+        $this->assertSame($container, $keeper->getContainer());
     }
 
     public function testShare()

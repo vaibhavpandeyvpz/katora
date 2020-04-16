@@ -1,5 +1,5 @@
 # vaibhavpandeyvpz/katora
-Simple service container implementing [PSR-11](https://github.com/php-fig/container) for [PHP](http://www.php.net/) >= 5.3.
+Simple service container implementing [PSR-11](https://github.com/php-fig/container) for [PHP](http://www.php.net/) >= 5.4.
 
 > Katora: `कटोरा` (Bowl)
 

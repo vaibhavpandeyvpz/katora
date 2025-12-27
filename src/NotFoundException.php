@@ -13,9 +13,11 @@ namespace Katora;
 use Psr\Container\NotFoundExceptionInterface;
 
 /**
- * Class NotFoundException
- * @package Katora
+ * Exception thrown when a service is not found in the container.
+ *
+ * This exception is thrown when attempting to retrieve a service that
+ * has not been registered in the container.
+ *
+ * @implements \Psr\Container\NotFoundExceptionInterface
  */
-class NotFoundException extends ContainerException implements NotFoundExceptionInterface
-{
-}
+class NotFoundException extends ContainerException implements NotFoundExceptionInterface {}

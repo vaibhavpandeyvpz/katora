@@ -15,17 +15,14 @@ use Katora\ServiceProviderInterface;
 
 /**
  * Class ThirteenServiceProvider
- * @package Katora\Mock
  */
 class ThirteenServiceProvider implements ServiceProviderInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function provide(Container $container)
+    public function provide(Container $container): void
     {
-        $container->set('thirteen', function () {
-            return 13;
-        });
+        $container->set('thirteen', fn () => 13);
     }
 }

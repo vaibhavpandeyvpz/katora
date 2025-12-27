@@ -14,8 +14,5 @@ use Psr\Container\ContainerExceptionInterface;
 
 /**
  * Class ContainerException
- * @package Katora
  */
-class ContainerException extends \InvalidArgumentException implements ContainerExceptionInterface
-{
-}
+class ContainerException extends \InvalidArgumentException implements ContainerExceptionInterface {}

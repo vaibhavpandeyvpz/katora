@@ -13,18 +13,27 @@ namespace Katora\Extra;
 use Psr\Container\ContainerInterface;
 
 /**
- * Interface KeepsContainer
- * @package Katora\Extra
+ * Interface for classes that can store and retrieve a container instance.
+ *
+ * This interface is useful for classes that need container awareness,
+ * allowing them to access services from a dependency injection container.
+ * The HasContainer trait provides a default implementation of this interface.
+ *
+ * @see HasContainer
  */
 interface KeepsContainer
 {
     /**
-     * @return ContainerInterface|null
+     * Retrieves the container instance.
+     *
+     * @return \Psr\Container\ContainerInterface|null The container instance, or null if not set
      */
-    public function getContainer();
+    public function getContainer(): ?ContainerInterface;
 
     /**
-     * @param ContainerInterface $container
+     * Sets the container instance.
+     *
+     * @param  \Psr\Container\ContainerInterface  $container  The container instance to set
      */
-    public function setContainer(ContainerInterface $container);
+    public function setContainer(ContainerInterface $container): void;
 }

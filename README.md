@@ -4,6 +4,7 @@
 [![Downloads](https://img.shields.io/packagist/dt/vaibhavpandeyvpz/katora.svg?style=flat-square)](https://packagist.org/packages/vaibhavpandeyvpz/katora)
 [![PHP Version](https://img.shields.io/packagist/php-v/vaibhavpandeyvpz/katora.svg?style=flat-square)](https://packagist.org/packages/vaibhavpandeyvpz/katora)
 [![License](https://img.shields.io/packagist/l/vaibhavpandeyvpz/katora.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vaibhavpandeyvpz/katora/tests.yml?branch=master&style=flat-square)](https://github.com/vaibhavpandeyvpz/katora/actions)
 [![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?style=flat-square)](https://github.com/vaibhavpandeyvpz/katora)
 
 Simple, lightweight service container implementing [PSR-11](https://www.php-fig.org/psr/psr-11/) for PHP 8.2+.
